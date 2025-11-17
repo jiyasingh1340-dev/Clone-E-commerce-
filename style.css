@@ -1,0 +1,110 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #ff5a5f;
+  
+  padding: 1rem;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  background-color: #333;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.categories, .menu {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.categories h3, .menu h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff5a5f;
+}
+
+.cat-container, .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cat-item, .menu-item {
+  width: 200px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cat-item:hover, .menu-item:hover {
+  transform: scale(1.05);
+}
+
+.cat-item img, .menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #ff5a5f;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e14b4f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .cat-container, .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

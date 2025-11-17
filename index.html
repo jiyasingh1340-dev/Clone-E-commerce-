@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Zomato</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious Food Delivered Fast</h2>
+    <p>Order your favorite meals anytime, anywhere</p>
+  </section>
+
+  <section class="categories">
+    <h3>Categories</h3>
+    <div class="cat-container">
+      <div class="cat-item">
+        <img src="burger.jpg" alt="Burger" />
+        <p>Burgers</p>
+      </div>
+      <div class="cat-item">
+        <img src="pizza.jpg" alt="Pizza" />
+        <p>Pizza</p>
+      </div>
+      <div class="cat-item">
+        <img src="dessert.jpg" alt="Dessert" />
+        <p>Desserts</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h3>Popular Items</h3>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="paneer.jpg" alt="Paneer Tikka" />
+        <h4>Paneer Tikka</h4>
+        <p>₹150</p>
+        <button onclick="addToCart('Paneer Tikka')">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="biryani.jpg" alt="Biryani" />
+        <h4>Chicken Biryani</h4>
+        <p>₹200</p>
+        <button onclick="addToCart('Chicken Biryani')">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="icecream.jpg" alt="Ice Cream" />
+        <h4>Ice Cream</h4>
+        <p>₹80</p>
+        <button onclick="addToCart('Ice Cream')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zomato . All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
